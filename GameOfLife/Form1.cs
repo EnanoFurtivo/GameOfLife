@@ -35,6 +35,7 @@ namespace GameOfLife
         public Form1()
         {
             InitializeComponent();
+            timer1.Interval = (int)delayNud.Value;
             initialWidth = pictureBox1.Width;
             pauseCheckBox1.Checked = paused;
             pauseCheckBox2.Checked = paused;
@@ -111,6 +112,12 @@ namespace GameOfLife
         private void Reset()
         {
             updating = true;
+
+            generations = 0;
+            deaths = 0;
+            births = 0;
+            alive = 0;
+            dead = 0;
 
             CellsLabel.Text = "Celdas: " + CellColumns * CellRows;
             CellSize = initialWidth / CellColumns;

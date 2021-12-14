@@ -17,11 +17,6 @@ namespace LifeModel
 
         public Board(int width, int height, int cellSize, ref int deaths, ref int births, ref int alive, ref int dead, bool wrap = true)
         {
-            deaths = 0;
-            births = 0;
-            alive = 0;
-            dead = 0;
-
             CellSize = cellSize;
 
             Cells = new Cell[width / cellSize, height / cellSize];

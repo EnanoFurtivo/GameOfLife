@@ -46,6 +46,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button50x50 = new System.Windows.Forms.Button();
+            this.button20x40 = new System.Windows.Forms.Button();
             this.pauseCheckBox2 = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.CellsLabel = new System.Windows.Forms.Label();
@@ -54,8 +56,6 @@
             this.AliveLabel = new System.Windows.Forms.Label();
             this.BirthsLabel = new System.Windows.Forms.Label();
             this.DeathsLabel = new System.Windows.Forms.Label();
-            this.button20x40 = new System.Windows.Forms.Button();
-            this.button50x50 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightNud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delayNud)).BeginInit();
@@ -142,7 +142,7 @@
             this.delayNud.Size = new System.Drawing.Size(49, 20);
             this.delayNud.TabIndex = 4;
             this.delayNud.Value = new decimal(new int[] {
-            100,
+            2000,
             0,
             0,
             0});
@@ -280,6 +280,26 @@
             this.tabPage2.Text = "Configuraciones";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button50x50
+            // 
+            this.button50x50.Location = new System.Drawing.Point(187, 7);
+            this.button50x50.Name = "button50x50";
+            this.button50x50.Size = new System.Drawing.Size(105, 23);
+            this.button50x50.TabIndex = 10;
+            this.button50x50.Text = "50 x 50";
+            this.button50x50.UseVisualStyleBackColor = true;
+            this.button50x50.Click += new System.EventHandler(this.button50x50_Click);
+            // 
+            // button20x40
+            // 
+            this.button20x40.Location = new System.Drawing.Point(73, 7);
+            this.button20x40.Name = "button20x40";
+            this.button20x40.Size = new System.Drawing.Size(99, 23);
+            this.button20x40.TabIndex = 9;
+            this.button20x40.Text = "20 x 40";
+            this.button20x40.UseVisualStyleBackColor = true;
+            this.button20x40.Click += new System.EventHandler(this.button20x40_Click);
+            // 
             // pauseCheckBox2
             // 
             this.pauseCheckBox2.AutoSize = true;
@@ -363,26 +383,6 @@
             this.DeathsLabel.Size = new System.Drawing.Size(57, 13);
             this.DeathsLabel.TabIndex = 10;
             this.DeathsLabel.Text = "Muertes: 0";
-            // 
-            // button20x40
-            // 
-            this.button20x40.Location = new System.Drawing.Point(73, 7);
-            this.button20x40.Name = "button20x40";
-            this.button20x40.Size = new System.Drawing.Size(99, 23);
-            this.button20x40.TabIndex = 9;
-            this.button20x40.Text = "20 x 40";
-            this.button20x40.UseVisualStyleBackColor = true;
-            this.button20x40.Click += new System.EventHandler(this.button20x40_Click);
-            // 
-            // button50x50
-            // 
-            this.button50x50.Location = new System.Drawing.Point(187, 7);
-            this.button50x50.Name = "button50x50";
-            this.button50x50.Size = new System.Drawing.Size(105, 23);
-            this.button50x50.TabIndex = 10;
-            this.button50x50.Text = "50 x 50";
-            this.button50x50.UseVisualStyleBackColor = true;
-            this.button50x50.Click += new System.EventHandler(this.button50x50_Click);
             // 
             // Form1
             // 
